@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "a complex production grade backend",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "javascript",
     "backend"
   ],
   "author": "Madhav Solanki",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
