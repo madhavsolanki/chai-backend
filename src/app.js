@@ -36,4 +36,12 @@ app.use(express.static("public"))
 app.use(cookieParser())
 
 // Exporting the `app` object so it can be imported and used in other files (e.g., for setting up routes or starting the server)
+
+
+// routes import
+import userRouter from './routes/user.routes.js'
+
+// routes declaration
+app.use("/api/v1/users", userRouter)
+
 export {app}
